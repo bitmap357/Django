@@ -8,4 +8,3 @@ def index(request):
 
 
 def products(request):
-    

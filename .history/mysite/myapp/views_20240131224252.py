@@ -6,6 +6,3 @@ from django.http import HttpResponse
 def index(request):
     return HttpResponse('Hello Word')
 
-
-def products(request):
-    

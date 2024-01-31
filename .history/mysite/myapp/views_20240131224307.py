@@ -7,5 +7,4 @@ def index(request):
     return HttpResponse('Hello Word')
 
 
-def products(request):
-    
+def products()
