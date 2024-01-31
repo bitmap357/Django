@@ -8,4 +8,4 @@ def index(request):
 
 
 def products(request):
-    return HttpResponse('Products')
+    return HttpResponse
