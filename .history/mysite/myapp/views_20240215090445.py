@@ -6,10 +6,8 @@ from .models import Book
 
 def index(request):
     book_list = Book.objects.all()
-    context = {
-        'book_list':book_list
-    }
-    return render(request, 'myapp/index.html', context)
+    context
+    return render(request, 'myapp/index.html')
 
 
 def products(request):
