@@ -6,7 +6,7 @@ from .models import Book
 
 def index(request):
     book_list = Book.objects.all()
-    return render(request, 'myapp/index.html')
+    return render()
 
 
 def products(request):
