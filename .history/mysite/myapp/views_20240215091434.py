@@ -12,5 +12,4 @@ def index(request):
     return render(request, 'myapp/index.html', context)
 
 
-def detail(request, book_id):
-    return HttpResponse("This is book no %s" %book_id)
+def detail

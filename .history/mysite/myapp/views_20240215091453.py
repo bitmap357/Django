@@ -13,4 +13,3 @@ def index(request):
 
 
 def detail(request, book_id):
-    return HttpResponse("This is book no %s" %book_id)
