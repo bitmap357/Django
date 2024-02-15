@@ -6,8 +6,8 @@ from .models import Book
 
 def index(request):
     book_list = Book.objects.all()
-    return HttpResponse(book_list)
+    return HttpResponse()
 
 
 def products(request):
-    return HttpResponse('Products') 
+    return HttpResponse('Products')
