@@ -14,5 +14,5 @@ def index(request):
 
 def detail(request, book_id):
     book = Book.objects.get(id=book_id)
-    
-    return render(request, 'myapp/detail.html', {'book':book})
+    cont
+    return render(request, 'myapp/detail.html', context)

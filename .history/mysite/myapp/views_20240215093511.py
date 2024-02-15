@@ -13,6 +13,5 @@ def index(request):
 
 
 def detail(request, book_id):
-    book = Book.objects.get(id=book_id)
-    
-    return render(request, 'myapp/detail.html', {'book':book})
+    Book.objects.get
+    return HttpResponse("This is book no %s" %book_id)
