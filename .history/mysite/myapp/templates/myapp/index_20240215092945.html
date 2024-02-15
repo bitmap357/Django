@@ -6,8 +6,9 @@
     <title>Document</title>
 </head>
 <body>
-    {% for book in book_list %}        
-        <a href="/book/{{book.id}}">{{ book }}</a> <br>
+    {% for book in book_list %}
+        {{ book.id }} -  <br>
+        <a href="">{{ book }}</a>
     {%endfor%}
 </body>
 </html>
