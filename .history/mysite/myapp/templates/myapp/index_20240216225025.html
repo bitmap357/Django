@@ -1,0 +1,6 @@
+{% extends 'myapp/base.html' %}
+
+
+{% for book in book_list %}        
+<   a href="{% url 'myapp:detail' book.id %}">{{ book }}</> <br>
+{%endfor%}

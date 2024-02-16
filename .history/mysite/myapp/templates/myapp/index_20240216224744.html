@@ -1,0 +1,23 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <!-- Image and text -->
+    <nav class="navbar navbar-dark bg-dark">
+        <a class="navbar-brand" href="#">
+        Book Store
+        </a>
+    </nav>
+
+
+    {% for book in book_list %}        
+        <a href="{% url 'myapp:detail' book.id %}">{{ book }}</a> <br>
+    {%endfor%}
+</body>
+</html>
