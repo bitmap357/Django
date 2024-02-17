@@ -18,4 +18,4 @@ def detail(request, book_id):
     return render(request, 'myapp/detail.html', {'book':book})
 
 def add_book():
-    return render(request, 'myapp/add_book.html')
+    return render(request)
