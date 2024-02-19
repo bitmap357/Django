@@ -35,5 +35,4 @@ def update(request, id):
     form = BookForm(request.POST or None, request.FILES, instance=book)
     if form.is_valid():
         form.save()
-        return redirect('/')
-    return render(request, 'myapp/edit.html', {'form':form, 'book':book})
+        
