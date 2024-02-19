@@ -23,8 +23,4 @@ def add_book(request):
         desc = request.POST.get('desc',)
         price = request.POST.get('price',)
         book_image = request.FILES['book_image']
-        
-        book = Book(name=name, desc=desc, price=price, book_image=book_image)
-        book.save()
-        
     return render(request, 'myapp/add_book.html')

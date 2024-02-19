@@ -18,13 +18,5 @@ def detail(request, book_id):
     return render(request, 'myapp/detail.html', {'book':book})
 
 def add_book(request):
-    if request.method == 'POST':
-        name = request.POST.get('name',)
-        desc = request.POST.get('desc',)
-        price = request.POST.get('price',)
-        book_image = request.FILES['book_image']
-        
-        book = Book(name=name, desc=desc, price=price, book_image=book_image)
-        book.save()
-        
+    if request.
     return render(request, 'myapp/add_book.html')
