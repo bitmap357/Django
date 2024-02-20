@@ -3,5 +3,5 @@ from .models import Book
 
 class BookForm(forms.ModelForm):
     class Meta:
-        model = Book
-        fields = ['name', 'desc', 'price', 'book_image']
+    model = Book
+    fields = ['name', 'desc', 'price', 'book_image']
