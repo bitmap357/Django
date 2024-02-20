@@ -1,4 +1,4 @@
-from django.shortcuts import render, redirect
+from django.shortcuts import render, re
 from django.http import HttpResponse
 from .models import Book
 from .forms import BookForm
@@ -35,5 +35,5 @@ def update(request, id):
     form = BookForm(request.POST or None, request.FILES, instance=book)
     if form.is_valid():
         form.save()
-        return redirect('/index')
+        return redirect('/')
     return render(request, 'myapp/edit.html', {'form':form, 'book':book})
