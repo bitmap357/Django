@@ -39,8 +39,5 @@ def update(request, id):
     return render(request, 'myapp/edit.html', {'form':form, 'book':book})
 
 def delete(request, id):
-    if request.method == "POST":
-        book = Book.objects.get(id=id)
-        book.delete()
-        return render(request, '/index')
+    if request.method
     return render(request, 'myapp/delete.html')

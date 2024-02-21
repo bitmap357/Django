@@ -41,6 +41,4 @@ def update(request, id):
 def delete(request, id):
     if request.method == "POST":
         book = Book.objects.get(id=id)
-        book.delete()
-        return render(request, '/index')
     return render(request, 'myapp/delete.html')
