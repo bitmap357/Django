@@ -2,11 +2,7 @@
 
 {% block body %}
 
-<div class="container">
-    <div class="row">
-        
-    </div>
-</div>
+
 
 {% for book in book_list %}        
     <a href="{% url 'myapp:detail' book.id %}">{{ book }}</a> <br>
