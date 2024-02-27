@@ -7,10 +7,10 @@
         {% for book in book_list %}
         <div class="col-md-3">
             <div class="card">
-                <img src="{{book.book_image}}" class="card-img-top" alt="">
+                <img src="card-img-top" alt="">
                 <div class="card-body">
                     <h5 class="card-title">{{ book }}</h5>
-                    <p class="card-text">${{ book.price }}</p>
+                    <p class="card-text">$9</p>
                     <a href="{% url 'myapp:detail' book.id %}"></a>
                 </div>
             </div>
