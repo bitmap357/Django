@@ -11,13 +11,15 @@
                 <div class="card-body">
                     <h5 class="card-title">Book Name</h5>
                     <p class="card-text">$9</p>
-                    <a href="{% url 'myapp:detail' book.id %}">{{ book }}</a>
+
                 </div>
             </div>
         </div>
-        {%endfor%}
+        
     </div>
 </div>
 
-
+{% for book in book_list %}        
+    <a href="{% url 'myapp:detail' book.id %}">{{ book }}</a> <br>
+{%endfor%}
 {% endblock %}
